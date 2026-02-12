@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colon Cancer Prediction</title>
+</head>
+<body>
+    <p>
+Gender: Female=0, Male=1 <br>
+Lifestyle: Active=0, Moderate=1, Sedentary=2
+</p>
+
+
+<h2>Colon Cancer Risk Prediction</h2>
+
+<form action="/predict" method="post">
+<input type="text" name="Age" required>
+    <input type="text" name="Age" placeholder="Age" required><br><br>
+    <input type="text" name="Gender" placeholder="Gender (0/1)" required><br><br>
+    <input type="text" name="BMI" placeholder="BMI" required><br><br>
+    <input type="text" name="Lifestyle" placeholder="Lifestyle" required><br><br>
+    <input type="text" name="Ethnicity" placeholder="Ethnicity" required><br><br>
+    <input type="text" name="Family History" placeholder="Family History" required><br><br>
+    <input type="text" name="Pre-existing Conditions" placeholder="Conditions" required><br><br>
+    <input type="text" name="Carbs" placeholder="Carbohydrates" required><br><br>
+    <input type="text" name="Proteins" placeholder="Proteins" required><br><br>
+    <input type="text" name="Fats" placeholder="Fats" required><br><br>
+    <input type="text" name="Vitamin A" placeholder="Vitamin A" required><br><br>
+    <input type="text" name="Vitamin C" placeholder="Vitamin C" required><br><br>
+    <input type="text" name="Iron" placeholder="Iron" required><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
